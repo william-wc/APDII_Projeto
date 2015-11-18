@@ -14,6 +14,7 @@ public class Remessa {
     private long numeroTransporte;
 
     private StatusRemessa status;
+    private Pedido pedido;
 
     public Remessa() {
 

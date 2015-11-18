@@ -9,4 +9,5 @@ public enum Genero {
     , Terror
     , SciFi
     , Policial
+    , Aventura
 }

@@ -5,13 +5,13 @@ package projeto.apdii.model;
  */
 public class ItemPedido {
 
-    private Livro livro;
     private int quantidade;
+    private Livro livro;
 
     public ItemPedido() {
     }
 
-    public ItemPedido(Livro livro, int quantidade) {
+    public ItemPedido(int quantidade, Livro livro) {
         this.quantidade = quantidade;
         this.livro = livro;
     }
