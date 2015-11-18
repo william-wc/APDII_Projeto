@@ -14,11 +14,15 @@ public class Pedido {
     private Date date;
 
     private StatusPedido status;
+    private Remessa remessa;
     private List<ItemPedido> itens;
 
     public Pedido() {
     }
 
+    /*---------------------
+    -       Public
+    ----------------------*/
     public double calcularTotal() {
         return itens.stream()
                 .mapToDouble(ItemPedido::calculatSubTotal)
@@ -40,4 +44,9 @@ public class Pedido {
     public void finalizarPedido() {
 
     }
+
+    /*---------------------
+    -       Get / Set
+    ----------------------*/
+
 }

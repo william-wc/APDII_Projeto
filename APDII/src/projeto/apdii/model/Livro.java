@@ -23,9 +23,7 @@ public class Livro {
     private double preco;
 
     private Date dataAdicao;
-
     private Genero genero;
-
 
     public Livro() {
     }
@@ -43,7 +41,14 @@ public class Livro {
         this.preco = preco;
         this.dataAdicao = dataAdicao;
     }
+    /*---------------------
+    -       Public
+    ----------------------*/
 
+
+    /*---------------------
+    -       Get / Set
+    ----------------------*/
     public long getIdentificador() {
         return identificador;
     }

@@ -10,8 +10,8 @@ import java.util.Date;
 public class Remessa {
 
     private Date data;
-    private long numeroTransporte;
     private String tipoTransporte;
+    private long numeroTransporte;
 
     private StatusRemessa status;
 
@@ -19,12 +19,21 @@ public class Remessa {
 
     }
 
-    public Remessa(Date data, long numeroTransporte, String tipoTransporte) {
+    public Remessa(Date data, String tipoTransporte, long numeroTransporte, StatusRemessa status) {
         this.data = data;
-        this.numeroTransporte = numeroTransporte;
         this.tipoTransporte = tipoTransporte;
+        this.numeroTransporte = numeroTransporte;
+        this.status = status;
     }
 
+    /*---------------------
+    -       Public
+    ----------------------*/
+
+
+    /*---------------------
+    -       Get / Set
+    ----------------------*/
     public Date getData() {
         return data;
     }
