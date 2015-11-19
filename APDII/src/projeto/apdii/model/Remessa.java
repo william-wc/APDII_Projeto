@@ -39,23 +39,39 @@ public class Remessa {
         return data;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public String getTipoTransporte() {
+        return tipoTransporte;
     }
 
     public long getNumeroTransporte() {
         return numeroTransporte;
     }
 
-    public void setNumeroTransporte(long numeroTransporte) {
-        this.numeroTransporte = numeroTransporte;
+    public StatusRemessa getStatus() {
+        return status;
     }
 
-    public String getTipoTransporte() {
-        return tipoTransporte;
+    public Pedido getPedido() {
+        return pedido;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
     }
 
     public void setTipoTransporte(String tipoTransporte) {
         this.tipoTransporte = tipoTransporte;
+    }
+
+    public void setNumeroTransporte(long numeroTransporte) {
+        this.numeroTransporte = numeroTransporte;
+    }
+
+    public void setStatus(StatusRemessa status) {
+        this.status = status;
+    }
+
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
     }
 }

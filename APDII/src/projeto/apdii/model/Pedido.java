@@ -62,7 +62,7 @@ public class Pedido {
     }
 
     public boolean excluirPedido(int identificador) {
-        return false;
+        return items.removeIf(p -> p.getLivro().getIdentificador() == identificador);
     }
 
     public void atualizarStatusPedido() {
